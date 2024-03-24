@@ -6,7 +6,7 @@ pipeline {
         AWS_DEFAULT_REGION = "eu-north-1"
     }
     stages {
-        stage("Create an EKS Cluster") {
+        stage("EC2") {
             steps {
                 script {
                     dir('EC2') {
