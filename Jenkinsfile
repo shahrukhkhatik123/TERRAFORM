@@ -12,7 +12,7 @@ pipeline {
                     dir('EC2') {
                         sh "terraform init"
                         sh "terraform apply -auto-approve"
-                        sh "terraform destroy -auto-approve"
+                        // Consider removing the 'terraform destroy' step here to avoid accidental deletion
                     }
                 }
             }
